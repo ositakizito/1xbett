@@ -7,7 +7,7 @@ export default function Won() {
     const { id } = useParams();
     const [tick, setTick] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:3000/won/' + id).then(res => {
+        axios.get('https://betservers.onrender.com/won/' + id).then(res => {
             setTick(res.data[0]);
         }).catch(err => console.log(err))
     })
