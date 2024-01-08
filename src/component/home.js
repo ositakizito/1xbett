@@ -6,13 +6,13 @@ export default function Home() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:3000/")
+        axios.get("https://betservers.onrender.com/")
             .then(res => setData(res.data))
             .catch(err => console.log(err))
     }, [])
 
     const handleDelete = (id) =>{
-        axios.delete("http://localhost:3000/delete/" + id)
+        axios.delete("https://betservers.onrender.com/delete/" + id)
         .then(res => {
           window.location.reload()
         })
