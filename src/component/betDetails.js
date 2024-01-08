@@ -32,7 +32,7 @@ export default function RunDetails() {
     const navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/ticket', values)
+        axios.post('https://betservers.onrender.com/ticket', values)
             .then(res => {
                 navigate("/")
             })
