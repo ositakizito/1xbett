@@ -92,7 +92,7 @@ export default function Run() {
                     <div className="pw bl">{tick.Team4}</div>
                 </div>
                 <div className="tod">
-                    <div className="cs">Correct Score {tick.SingleScore}-{tick.SingleScore2}</div>
+                    <div className="cs">Correct Score {tick.SingleScore3}-{tick.SingleScore4}</div>
                     <div className="pw">{tick.Odd2}</div>
                 </div>
                 <div className="tod">
